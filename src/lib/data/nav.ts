@@ -1,7 +1,7 @@
-type NavItem = {
+interface NavItem {
   title: string;
   link: string;
-};
+}
 
 export const navMenu: NavItem[] = [
   { title: "About", link: "#about" },
