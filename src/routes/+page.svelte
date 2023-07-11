@@ -3,6 +3,18 @@
   import About from "$lib/components/About.svelte";
   import Experience from "$lib/components/Experience.svelte";
   import Projects from "$lib/components/Projects.svelte";
+  import { onMount } from "svelte";
+
+  let pageLoadTime = 0;
+
+  onMount(() => {
+    if (window.performance) {
+      // TODO: Update below
+      const navStart = window.performance.timing.navigationStart;
+      const loadEnd = window.performance.timing.loadEventEnd;
+      pageLoadTime = loadEnd - navStart;
+    }
+  });
 </script>
 
 <div
@@ -21,6 +33,42 @@
       <About />
       <Experience />
       <Projects />
+      <footer class="max-w-md pb-16 text-sm text-slate-400 sm:pb-0">
+        {#if pageLoadTime > 0}
+          <p>
+            This site loaded in a blazingly fast {pageLoadTime / 1000}s.
+            &#128293;
+          </p>
+        {/if}
+        <p>
+          Built with
+          <a
+            href="https://kit.svelte.dev"
+            class="font-medium text-slate-300 hover:text-sky-300 focus-visible:text-sky-300"
+            target="_blank">SvelteKit</a
+          >
+          and
+          <a
+            href="https://tailwindcss.com"
+            class="font-medium text-slate-300 hover:text-sky-300 focus-visible:text-sky-300"
+            target="_blank">TailwindCSS</a
+          >, deployed with
+          <a
+            href="https://netlify.com"
+            class="font-medium text-slate-300 hover:text-sky-300 focus-visible:text-sky-300"
+            target="_blank"
+          >
+            Netlify</a
+          >.
+        </p>
+        <p>
+          Coded in <a
+            href="https://neovim.io"
+            class="font-medium text-slate-300 hover:text-sky-300 focus-visible:text-sky-300"
+            target="_blank">Neovim</a
+          >, btw.
+        </p>
+      </footer>
     </main>
   </div>
 </div>
