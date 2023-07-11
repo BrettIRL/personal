@@ -1,7 +1,8 @@
-<script>
+<script lang="ts">
   import Header from "$lib/components/Header.svelte";
   import About from "$lib/components/About.svelte";
   import Experience from "$lib/components/Experience.svelte";
+  import Projects from "$lib/components/Projects.svelte";
 </script>
 
 <div
@@ -19,8 +20,7 @@
     >
       <About />
       <Experience />
-      <section id="projects" aria-label="My Projects" />
-      <footer />
+      <Projects />
     </main>
   </div>
 </div>
