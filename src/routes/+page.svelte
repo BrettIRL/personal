@@ -28,7 +28,7 @@
     <Header />
     <main
       id="content"
-      class="text-gray-600 dark:text-slate-400 pt-24 lg:w-1/2 lg:py-24 basis-1/2"
+      class="text-slate-800 dark:text-slate-400 pt-24 lg:w-1/2 lg:py-24 basis-1/2"
     >
       <About />
       <Experience />
@@ -44,18 +44,18 @@
           Built with
           <a
             href="https://kit.svelte.dev"
-            class="font-medium text-slate-300 hover:text-sky-300 focus-visible:text-sky-300"
+            class="font-medium text-sky-400 dark:text-slate-300 hover:text-slate-900 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
             target="_blank">SvelteKit</a
           >
           and
           <a
             href="https://tailwindcss.com"
-            class="font-medium text-slate-300 hover:text-sky-300 focus-visible:text-sky-300"
+            class="font-medium text-sky-400 dark:text-slate-300 hover:text-slate-900 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
             target="_blank">TailwindCSS</a
           >, deployed with
           <a
             href="https://netlify.com"
-            class="font-medium text-slate-300 hover:text-sky-300 focus-visible:text-sky-300"
+            class="font-medium text-sky-400 dark:text-slate-300 hover:text-slate-900 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
             target="_blank"
           >
             Netlify</a
@@ -64,7 +64,7 @@
         <p>
           Coded in <a
             href="https://neovim.io"
-            class="font-medium text-slate-300 hover:text-sky-300 focus-visible:text-sky-300"
+            class="font-medium text-sky-400 dark:text-slate-300 hover:text-slate-900 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
             target="_blank">Neovim</a
           >, btw.
         </p>
