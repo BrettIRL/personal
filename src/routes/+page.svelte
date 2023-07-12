@@ -51,15 +51,13 @@
             target="_blank">TailwindCSS</a
           >, deployed with
           <a
-            href="https://netlify.com"
+            href="https://vercel.com"
             class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
             target="_blank"
           >
-            Netlify</a
-          >.
-        </p>
-        <p>
-          Coded in <a
+            Vercel</a
+          >. Coded in
+          <a
             href="https://neovim.io"
             class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
             target="_blank">Neovim</a
