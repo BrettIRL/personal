@@ -13,17 +13,17 @@
     {#each experience as job}
       <li class="mb-12">
         <div
-          class="group relative grid grid-cols-8 gap-4 hover:!opacity-100 group-hover/list:opacity-50"
+          class="group relative grid gap-4 pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
         >
           <div
-            class="absolute -inset-x-4 -inset-y-4 z-10 rounded-md group-hover:bg-slate-50/[0.075] group-hover:dark:bg-slate-800/50 group-hover:border group-hover:border-slate-200/20 group-hover:dark:border-none group-hover:shadow-md group-hover:dark:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg"
+            class="absolute -inset-x-4 -inset-y-4 z-10 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-slate-50/[0.075] lg:group-hover:dark:bg-slate-800/50 lg:group-hover:border lg:group-hover:border-slate-200/20 lg:group-hover:dark:border-none lg:group-hover:shadow-md lg:group-hover:dark:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
           />
           <header
-            class="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400/80 dark:text-slate-500 col-span-2 z-10"
+            class="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400/80 dark:text-slate-500 sm:col-span-2 z-10"
           >
             {job.from} - {job.to}
           </header>
-          <div class="col-span-6 z-10">
+          <div class="sm:col-span-6 z-10">
             <a
               href={job.link}
               class="inline-flex items-baseline font-medium leading-tight text-slate-900 dark:text-slate-200 group-hover:dark:text-sky-300 text-base"

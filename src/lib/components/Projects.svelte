@@ -13,12 +13,12 @@
     {#each projects as project}
       <li class="mb-12">
         <div
-          class="group relative grid grid-cols-8 transition-all gap-4 hover:!opacity-100 group-hover/list:opacity-50"
+          class="group relative grid gap-4 pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
         >
           <div
-            class="absolute -inset-x-4 -inset-y-4 z-10 rounded-md group-hover:bg-slate-50/[0.075] group-hover:dark:bg-slate-800/50 group-hover:border group-hover:border-slate-200/20 group-hover:dark:border-none group-hover:shadow-md group-hover:dark:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] drop-shadow-lg"
+            class="absolute -inset-x-4 -inset-y-4 z-10 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-slate-50/[0.075] lg:group-hover:dark:bg-slate-800/50 lg:group-hover:border lg:group-hover:border-slate-200/20 lg:group-hover:dark:border-none lg:group-hover:shadow-md lg:group-hover:dark:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
           />
-          <div class="order-2 col-span-6 z-10">
+          <div class="sm:order-2 sm:col-span-6 z-10">
             <a
               href={project.link}
               class="inline-flex items-baseline font-medium leading-tight text-slate-900 dark:text-slate-200 group-hover:dark:text-sky-300 text-base"
@@ -41,7 +41,9 @@
           </div>
           <img
             alt={project.name}
-            class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 order-1 col-span-2 translate-y-1 z-10"
+            width="200"
+            height="48"
+            class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 translate-y-1 z-10"
             src={project.image}
           />
         </div>

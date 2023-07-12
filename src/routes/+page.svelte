@@ -18,7 +18,7 @@
 </script>
 
 <div
-  class="fixed w-calc-xl min-h-screen border-r border-slate-200/5 bg-slate-900 bg-grid-gradient before:bg-grid-texture before:absolute before:w-full before:h-full before:[mask-image:linear-gradient(90deg,transparent,65%,black)]"
+  class="fixed hidden lg:block w-calc-xl min-h-screen border-r border-slate-200/5 bg-slate-900 bg-grid-gradient before:bg-grid-texture before:absolute before:w-full before:h-full before:[mask-image:linear-gradient(90deg,transparent,65%,black)]"
 >
 </div>
 <div
@@ -26,14 +26,11 @@
 >
   <div class="lg:flex lg:justify-between">
     <Header />
-    <main
-      id="content"
-      class="text-slate-800 dark:text-slate-400 pt-24 lg:w-1/2 lg:py-24 basis-1/2"
-    >
+    <main id="content" class="pt-24 lg:w-1/2 lg:py-24 basis-1/2">
       <About />
       <Experience />
       <Projects />
-      <footer class="max-w-md pb-16 text-sm text-slate-400 sm:pb-0">
+      <footer class="text-slate-400 max-w-md pb-16 text-sm sm:pb-0">
         {#if pageLoadTime > 0}
           <p>
             This site loaded in a blazingly fast {pageLoadTime / 1000}s.
