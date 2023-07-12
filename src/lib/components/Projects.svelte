@@ -29,7 +29,7 @@
               {#each project.technologies as technology}
                 <li class="mr-1 5 mt-2">
                   <div
-                    class="flex-items-center rounded-md bg-sky-400/10 px-3 py-1 text-xs font-medium leading-5 text-sky-400 dark:text-sky-300"
+                    class="flex-items-center rounded-md bg-sky-400/10 px-3 py-1 text-xs font-medium leading-5 text-sky-500 dark:text-sky-300"
                   >
                     {technology}
                   </div>
