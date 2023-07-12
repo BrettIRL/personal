@@ -1,6 +1,17 @@
 <script lang="ts">
   import { navMenu } from "$lib/data";
 
+  function scrollIntoView(e: MouseEvent) {
+    const target = e.currentTarget as HTMLAnchorElement;
+    const selector = target.getAttribute("href");
+    if (!selector) return;
+    const el = document.querySelector(selector);
+    if (!el) return;
+    el.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+
   function toggleDarkMode() {
     const rootClasses = document.documentElement.classList;
     if (rootClasses.contains("dark")) {
@@ -32,7 +43,11 @@
       <ul class="mt-16 w-max">
         {#each navMenu as menuItem}
           <li>
-            <a href={menuItem.link} class="group flex items-center py-3">
+            <a
+              href={menuItem.link}
+              class="group flex items-center py-3"
+              on:click|preventDefault={scrollIntoView}
+            >
               <span
                 class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
                 >{menuItem.title}</span
