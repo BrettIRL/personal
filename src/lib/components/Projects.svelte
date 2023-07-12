@@ -24,7 +24,24 @@
               class="inline-flex items-baseline font-medium leading-tight text-slate-900 dark:text-slate-200 group-hover:dark:text-sky-300 text-base"
               target="_blank"
             >
-              <h3>{project.name}</h3>
+              <h3>
+                {project.name}
+                {#if project.link}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    class="w-3 h-3 inline-block stroke-2 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 translate-y-px"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                {/if}
+              </h3>
             </a>
             <p class="mt-2 text-sm leading-normal">{project.description}</p>
             <ul class="mt-2 flex flex-wrap">
