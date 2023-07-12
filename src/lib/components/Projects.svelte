@@ -1,4 +1,5 @@
 <script>
+  import SectionHeader from "./SectionHeader.svelte";
   import { projects } from "$lib/data";
 </script>
 
@@ -7,6 +8,7 @@
   class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
   aria-label="My Projects"
 >
+  <SectionHeader title="Projects" />
   <ul class="group/list">
     {#each projects as project}
       <li class="mb-12">
