@@ -1,6 +1,10 @@
 <script>
   import "../tailwind.css";
+  import { dev } from "$app/environment";
+  import { inject } from "@vercel/analytics";
   import { onMount } from "svelte";
+
+  inject({ mode: dev ? "development" : "production" });
 
   onMount(() => {
     if (
