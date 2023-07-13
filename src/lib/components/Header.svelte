@@ -31,6 +31,7 @@
     <h1
       class="text-4xl font-bold tracking-tight text-slate-900 lg:text-slate-100 dark:text-slate-100 sm:text-5xl"
     >
+      Brett Cocking
     </h1>
     <h2
       class="mt-3 text-lg font-medium tracking-tight text-slate-900 lg:text-slate-100 dark:text-slate-100 sm:text-xl"
@@ -38,6 +39,7 @@
       Full Stack Engineer
     </h2>
     <p class="lg:text-slate-400 mt-4 max-w-xs leading-normal">
+      I build sleek, robust, intuitive products and digital experiences.
     </p>
     <nav class="hidden lg:block">
       <ul class="mt-16 w-max">
