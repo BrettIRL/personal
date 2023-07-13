@@ -85,27 +85,4 @@
       </li>
     {/each}
   </ul>
-  <div class="mt-12">
-    <a
-      href="/projects"
-      class="inline-flex items-center font-medium leading-tight text-slate-900 dark:text-slate-200 group"
-    >
-      <span
-        class="border-b border-b-transparent pb-px transition group-hover:border-sky-300"
-        >All Projects
-      </span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        class="w-4 h-4 inline-block ml-1 stroke-[1.5] stroke-slate-900 dark:stroke-slate-200 -translate-y-px transition-transform group-hover:translate-x-2"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-        />
-      </svg>
-    </a>
-  </div>
 </section>
