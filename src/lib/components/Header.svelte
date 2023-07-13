@@ -63,9 +63,10 @@
   <ul class="mt-8 flex items-center z-10">
     <li class="mr-2">
       <a
-        href="/"
+        href="https://github.com/BrettIRL"
         class="w-8 h-8 flex items-center justify-center rounded-md transition text-slate-400 lg:hover:text-slate-200 hover:bg-slate-900/5 dark:hover:bg-white/5"
       >
+        <span class="sr-only">Github</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
@@ -79,9 +80,10 @@
     </li>
     <li class="mr-2">
       <a
-        href="/"
+        href="http://linkedin.com/in/brett-c"
         class="w-8 h-8 flex items-center justify-center rounded-md transition text-slate-400 lg:hover:text-slate-200 hover:bg-slate-900/5 dark:hover:bg-white/5"
       >
+        <span class="sr-only">LinkedIn</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
