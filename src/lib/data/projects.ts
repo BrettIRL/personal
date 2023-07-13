@@ -1,7 +1,7 @@
-import greaseTraps from "$lib/assets/grease_traps.jpg";
-import offerzen from "$lib/assets/offerzen.jpg";
-import riftCompanion from "$lib/assets/rift_companion.png";
-import hoops from "$lib/assets/hoops_prod.jpg";
+import greaseTraps from "$lib/assets/grease_traps.webp";
+import offerzen from "$lib/assets/offerzen.webp";
+import riftCompanion from "$lib/assets/rift_companion.webp";
+import hoops from "$lib/assets/hoops_prod.webp";
 
 interface Project {
   image: string;
