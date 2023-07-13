@@ -15,4 +15,12 @@
   });
 </script>
 
+<svelte:head>
+  <title>Brett Cocking - Full Stack Engineer</title>
+  <meta
+    name="description"
+    content="Brett Cocking is a software engineer who builds sleek, robust, intuitive products and digital experiences."
+  />
+</svelte:head>
+
 <slot />
