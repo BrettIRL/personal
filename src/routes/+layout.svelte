@@ -21,6 +21,8 @@
     name="description"
     content="Brett Cocking is a software engineer who builds sleek, robust, intuitive products and digital experiences."
   />
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 </svelte:head>
 
 <slot />
