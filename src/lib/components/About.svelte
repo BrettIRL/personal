@@ -11,11 +11,11 @@
   <p class="mb-4">
     It all started over a decade ago when I wanted to remove some padding on a
     web template I had. Little did I know that that simple act of tinkering
-    would unlock a world of coding to me and set my on a journey in software
+    would unlock a world of coding for me and set me on a journey in software
     engineering.
   </p>
   <p class="mb-4">
-    Throughout my career, I've had the opporunity to work with a diverse range
+    Throughout my career, I've had the opportunity to work with a diverse range
     of clients and companies, from individuals to small businesses and even on
     my own
     <a

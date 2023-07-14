@@ -16,7 +16,7 @@ export const experience: Job[] = [
     role: "Co-Founder & Lead Developer",
     link: "https://playup.coach",
     description:
-      "Lead the end-to-end development process, including design and implementation of the architecture and infrastructure of the product. Design and execution of the product roadmap, prioritized features, and milestones. Ensured high-quality code, efficient workflows and adherences to best practises.",
+      "Lead the end-to-end development process, including design and implementation of the architecture and infrastructure of the product. Design and execution of the product roadmap, prioritized features, and milestones. Ensured high-quality code, efficient workflows and adherence to best practices.",
     technologies: [
       "React",
       "Node",
@@ -42,7 +42,7 @@ export const experience: Job[] = [
     company: "Freelance",
     role: "Full Stack Engineer",
     description:
-      "Worked with a range of large and small agencies, start-ups and individuals to improve, refine or bring their product ideas to life. Worked on a variety of projects, spanning different industries, utilizing different technolgoies.",
+      "Worked with a range of large and small agencies, start-ups and individuals to improve, refine or bring their product ideas to life. Worked on a variety of projects, spanning different industries, utilizing different technologies.",
     technologies: [
       "Vue",
       "React",
