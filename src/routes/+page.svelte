@@ -8,19 +8,23 @@
   let pageLoadTime = 0;
 
   onMount(() => {
-    if (window.performance) {
-      // TODO: Update below
-      const navStart = window.performance.timing.navigationStart;
-      const loadEnd = window.performance.timing.loadEventEnd;
-      pageLoadTime = loadEnd - navStart;
-    }
+    const observer = new PerformanceObserver(
+      (entries: PerformanceObserverEntryList) => {
+        const navEntries = entries.getEntriesByType("navigation");
+        if (navEntries.length > 0) {
+          const entry = navEntries[0] as PerformanceNavigationTiming;
+          pageLoadTime = entry.loadEventEnd - entry.startTime;
+        }
+      }
+    );
+
+    observer.observe({ type: "navigation", buffered: true });
   });
 </script>
 
 <div
   class="fixed hidden lg:block w-calc-xl min-h-screen border-r border-slate-200/5 bg-slate-900 bg-grid-gradient before:bg-grid-texture before:absolute before:w-full before:h-full before:[mask-image:linear-gradient(90deg,transparent,65%,black)]"
->
-</div>
+/>
 <div
   class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
 >
