@@ -59,7 +59,7 @@ export const experience: Job[] = [
     from: "2012",
     to: "2016",
     company: "Trademark Technology",
-    role: "Developer",
+    role: "Web Developer",
     link: "https://trademarktechnology.co.za",
     description:
       "Worked closely with clients to create and maintain professional and functional websites for their needs. Building MVP products and marketing experiences for small businesses.",
