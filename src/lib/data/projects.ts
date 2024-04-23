@@ -1,5 +1,5 @@
+import candidateTracker from "$lib/assets/candidate_tracker.webp";
 import greaseTraps from "$lib/assets/grease_traps.webp";
-import offerzen from "$lib/assets/offerzen.webp";
 import riftCompanion from "$lib/assets/rift_companion.webp";
 import hoops from "$lib/assets/hoops_prod.webp";
 
@@ -14,20 +14,20 @@ interface Project {
 
 export const projects: Project[] = [
   {
+    image: candidateTracker,
+    name: "Edge Candidate Tracker",
+    link: "https://github.com/BrettIRL/candidate-tracker",
+    description:
+      "Job candidate assessment and tracking system. Designed to handle the unique challenges faced by a field marketing company when hiring en-masse",
+    technologies: ["NextJS", "Tailwind", "Drizzle ORM", "PostgresQL"],
+  },
+  {
     image: greaseTraps,
     name: "Grease Traps",
     link: "https://greasetraps.co.za",
     description:
       "Bespoke website and e-commerce platform created from the ground up to showcase their extensive product range and deliver a seamless shopping experience for customers.",
     technologies: ["Vue", "Laravel", "SCSS", "MySQL"],
-  },
-  {
-    image: offerzen,
-    name: "Offerzen Make",
-    description:
-      "Marketing site and landing page for Offerzen's Make service, connecting companies to contract developers.",
-    note: "Service since discontinued.",
-    technologies: ["Ember", "Javascript", "SCSS", "Postgre"],
   },
   {
     image: riftCompanion,

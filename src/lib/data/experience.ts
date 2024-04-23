@@ -13,7 +13,7 @@ export const experience: Job[] = [
     from: "2021",
     to: "present",
     company: "PlayUp",
-    role: "Co-Founder & Lead Developer",
+    role: "Co-Founder & Lead Full Stack Engineer",
     link: "https://playup.coach",
     description:
       "Lead the end-to-end development process, including design and implementation of the architecture and infrastructure of the product. Design and execution of the product roadmap, prioritized features, and milestones. Ensured high-quality code, efficient workflows and adherence to best practices.",
@@ -37,32 +37,23 @@ export const experience: Job[] = [
     technologies: ["React", "Node", "Javascript", "CSS", "Liquid"],
   },
   {
-    from: "2016",
+    from: "2012",
     to: "2020",
-    company: "Freelance",
+    company: "Trademark Technology",
     role: "Full Stack Engineer",
+    link: "https://trademarktechnology.co.za",
     description:
-      "Worked with a range of large and small agencies, start-ups and individuals to improve, refine or bring their product ideas to life. Worked on a variety of projects, spanning different industries, utilizing different technologies.",
+      "Worked as part of an agency with a range of small and large companies to improve, refine or bring their product ideas to life. Worked on over 30 projects, spanning different industries, technologies and platforms.",
     technologies: [
-      "Vue",
       "React",
+      "Vue",
+      "Swift",
       "Laravel",
-      "PHP",
       "Javascript",
       "Typescript",
       "SCSS",
       "MySQL",
       "Postgres",
     ],
-  },
-  {
-    from: "2012",
-    to: "2016",
-    company: "Trademark Technology",
-    role: "Developer",
-    link: "https://trademarktechnology.co.za",
-    description:
-      "Worked closely with clients to create and maintain professional and functional websites for their needs. Building MVP products and marketing experiences for small businesses.",
-    technologies: ["Wordpress", "PHP", "Javascript", "MySQL"],
   },
 ];
