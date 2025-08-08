@@ -20,24 +20,24 @@
     my own
     <a
       href="https://playup.coach"
-      class="text-slate-900 dark:text-slate-200 font-medium hover:text-sky-400 hover:dark:text-sky-300"
+      class="text-slate-900 dark:text-slate-200 font-medium hover:text-sky-400 dark:hover:text-sky-300"
       target="_blank">startup</a
     >. I've collaborated on projects spanning various industries, from
     <a
       href="https://hoopsprod.co.za"
-      class="text-slate-900 dark:text-slate-200 font-medium hover:text-sky-400 hover:dark:text-sky-300"
+      class="text-slate-900 dark:text-slate-200 font-medium hover:text-sky-400 dark:hover:text-sky-300"
       target="_blank">film production</a
     >
     and
     <a
       href="https://offerzen.co.za"
-      class="text-slate-900 dark:text-slate-200 font-medium hover:text-sky-400 hover:dark:text-sky-300"
+      class="text-slate-900 dark:text-slate-200 font-medium hover:text-sky-400 dark:hover:text-sky-300"
       target="_blank">recruitment</a
     >
     to
     <a
       href="https://chaebanicecream.com"
-      class="text-slate-900 dark:text-slate-200 font-medium hover:text-sky-400 hover:dark:text-sky-300"
+      class="text-slate-900 dark:text-slate-200 font-medium hover:text-sky-400 dark:hover:text-sky-300"
       target="_blank">e-commerce</a
     > and sport.
   </p>

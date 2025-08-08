@@ -23,10 +23,10 @@
 </script>
 
 <div
-  class="fixed hidden lg:block w-calc-xl min-h-screen border-r border-slate-200/5 bg-slate-900 bg-grid-gradient before:bg-grid-texture before:absolute before:w-full before:h-full before:[mask-image:linear-gradient(90deg,transparent,65%,black)]"
+  class="fixed hidden lg:block w-calc-xl min-h-screen border-r border-slate-200/5 bg-slate-900 bg-grid-gradient before:bg-grid-texture before:absolute before:w-full before:h-full before:mask-[linear-gradient(90deg,transparent,65%,black)]"
 />
 <div
-  class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
+  class="mx-auto min-h-screen max-w-(--breakpoint-xl) px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
 >
   <div class="lg:flex lg:justify-between">
     <Header />
@@ -45,25 +45,25 @@
           Built with
           <a
             href="https://kit.svelte.dev"
-            class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
+            class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 dark:hover:text-sky-300 dark:focus-visible:text-sky-300"
             target="_blank">SvelteKit</a
           >
           and
           <a
             href="https://tailwindcss.com"
-            class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
+            class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 dark:hover:text-sky-300 dark:focus-visible:text-sky-300"
             target="_blank">TailwindCSS</a
           >, deployed with
           <a
             href="https://vercel.com"
-            class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
+            class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 dark:hover:text-sky-300 dark:focus-visible:text-sky-300"
             target="_blank"
           >
             Vercel</a
           >. Coded in
           <a
             href="https://neovim.io"
-            class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 hover:dark:text-sky-300 focus-visible:dark:text-sky-300"
+            class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 dark:hover:text-sky-300 dark:focus-visible:text-sky-300"
             target="_blank">Neovim</a
           >, btw.
         </p>
