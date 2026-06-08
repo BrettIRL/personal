@@ -6,6 +6,7 @@
   import { onMount } from "svelte";
 
   let pageLoadTime = 0;
+  let readablePageLoadTime = "";
 
   onMount(() => {
     const observer = new PerformanceObserver(
@@ -14,6 +15,11 @@
         if (navEntries.length > 0) {
           const entry = navEntries[0] as PerformanceNavigationTiming;
           pageLoadTime = entry.loadEventEnd - entry.startTime;
+          if (pageLoadTime > 1000) {
+            readablePageLoadTime = `${(pageLoadTime / 1000).toFixed(2)}s`;
+          } else {
+            readablePageLoadTime = `${Math.round(pageLoadTime)}ms`;
+          }
         }
       }
     );
@@ -24,7 +30,7 @@
 
 <div
   class="fixed hidden lg:block w-calc-xl min-h-screen border-r border-slate-200/5 bg-slate-900 bg-grid-gradient before:bg-grid-texture before:absolute before:w-full before:h-full before:mask-[linear-gradient(90deg,transparent,65%,black)]"
-/>
+></div>
 <div
   class="mx-auto min-h-screen max-w-(--breakpoint-xl) px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
 >
@@ -37,7 +43,7 @@
       <footer class="text-slate-400 max-w-md pb-16 text-sm sm:pb-0">
         {#if pageLoadTime > 0}
           <p>
-            This site loaded in a blazingly fast {pageLoadTime / 1000}s.
+            This site loaded in a blazingly fast {readablePageLoadTime}.
             &#128293;
           </p>
         {/if}
@@ -55,11 +61,11 @@
             target="_blank">TailwindCSS</a
           >, deployed with
           <a
-            href="https://vercel.com"
+            href="https://cloudflare.com"
             class="font-medium text-slate-800 dark:text-slate-300 hover:text-sky-400 focus-visible:text-slate-900 dark:hover:text-sky-300 dark:focus-visible:text-sky-300"
             target="_blank"
           >
-            Vercel</a
+            Cloudflare Pages</a
           >. Coded in
           <a
             href="https://neovim.io"

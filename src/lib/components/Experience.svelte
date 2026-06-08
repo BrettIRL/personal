@@ -17,7 +17,7 @@
         >
           <div
             class="absolute -inset-x-4 -inset-y-4 z-10 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-slate-50/7.5 lg:dark:group-hover:bg-slate-800/50 lg:group-hover:border lg:group-hover:border-slate-200/20 lg:dark:group-hover:border-none lg:group-hover:shadow-md lg:dark:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-          />
+          ></div>
           <header
             class="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400/80 dark:text-slate-500 sm:col-span-2 z-10"
           >
