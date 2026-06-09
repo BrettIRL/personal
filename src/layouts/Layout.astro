@@ -1,0 +1,29 @@
+---
+import "../assets/styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Brett Cocking is a software engineer who builds scalable, user-centric digital products."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Brett Cocking - Full Stack Engineer</title>
+    <script is:inline>
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.theme === "dark" ||
+          (!("theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches),
+      );
+    </script>
+  </head>
+  <body
+    class="bg-white leading-relaxed text-slate-800 antialiased selection:bg-cyan-300 selection:text-cyan-900 dark:bg-slate-900 dark:text-slate-400"
+  >
+    <slot />
+  </body>
+</html>
