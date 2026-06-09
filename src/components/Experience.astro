@@ -1,0 +1,84 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import { experience } from "../lib/data/experience";
+---
+
+<section
+  id="experience"
+  class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+  aria-label="Work Experience"
+>
+  <SectionHeader title="Experience" />
+  <ol class="group/list">
+    {
+      experience.map((job) => (
+        <li class="mb-12">
+          <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:group-hover/list:opacity-50 lg:hover:opacity-100!">
+            <div class="absolute -inset-x-4 -inset-y-4 z-10 hidden rounded-md border border-transparent transition lg:-inset-x-6 lg:block lg:group-hover:border-slate-200/20 lg:group-hover:bg-slate-50/7.5 lg:group-hover:shadow-md lg:group-hover:drop-shadow-lg lg:dark:group-hover:border-transparent lg:dark:group-hover:bg-slate-800/50 lg:dark:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
+            <header class="z-10 mt-1 mb-2 text-xs font-semibold tracking-wide text-slate-400/80 uppercase sm:col-span-2 dark:text-slate-500">
+              {job.from} - {job.to}
+            </header>
+            <div class="z-10 sm:col-span-6">
+              <a
+                href={job.link}
+                class="inline-flex items-baseline text-base leading-tight font-medium text-slate-900 dark:text-slate-200 dark:group-hover:text-sky-300"
+                target="_blank"
+              >
+                <h3 class="leading-snug font-medium">
+                  {job.role} - {job.company}
+                  {job.link && (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      class="inline-block h-3 w-3 translate-y-px stroke-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  )}
+                </h3>
+              </a>
+              <p class="mt-2 text-sm leading-normal">{job.description}</p>
+              <ul class="mt-2 flex flex-wrap">
+                {job.technologies.map((technology) => (
+                  <li class="mt-2 mr-1.5">
+                    <div class="flex items-center rounded-md bg-sky-400/10 px-3 py-1 text-xs leading-5 font-medium text-sky-500 dark:text-sky-300">
+                      {technology}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+  <div class="mt-12">
+    <a
+      href="/resume.pdf"
+      class="group inline-flex items-center leading-tight font-medium text-slate-900 dark:text-slate-200"
+    >
+      <span
+        class="border-b border-b-transparent pb-px transition group-hover:border-sky-300"
+        >View Resume
+      </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        class="ml-1 inline-block h-4 w-4 -translate-y-px stroke-slate-900 stroke-[1.5] transition-transform group-hover:translate-x-2 dark:stroke-slate-200"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+      </svg>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans:
+    var(--font-inter), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --background-image-grid-texture: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(241 245 249 / 0.03)'><path d='M0 .5H31.5V32'/></svg>");
+  --background-image-grid-gradient: linear-gradient(
+    to left,
+    rgb(12, 17, 32),
+    rgba(12, 17, 32, 0) 50%
+  );
+}
+
+body {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
