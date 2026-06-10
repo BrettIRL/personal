@@ -23,6 +23,7 @@ export const experience: Job[] = [
       "Kotlin",
       "React Native",
       "Postgres",
+      "Tailwind",
       "Terraform",
     ],
   },
