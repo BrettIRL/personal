@@ -44,6 +44,9 @@ importers:
 
   packages/data:
     devDependencies:
+      "@personal/tsconfig":
+        specifier: workspace:*
+        version: link:../../tooling/typescript
       typescript:
         specifier: ^5.8.3
         version: 5.9.3
@@ -59,6 +62,8 @@ importers:
       prettier-plugin-tailwindcss:
         specifier: ^0.8.0
         version: 0.8.0(prettier-plugin-astro@0.14.1)(prettier@3.8.3)
+
+  tooling/typescript: {}
 
 packages:
   "@astrojs/check@0.9.9":
