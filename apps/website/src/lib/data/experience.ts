@@ -11,12 +11,12 @@ interface Job {
 export const experience: Job[] = [
   {
     from: "2025",
-    to: "present",
+    to: "2026",
     company: "Pleo",
     role: "Senior Full Stack Engineer",
     link: "https://pleo.io",
     description:
-      "Developed and maintained the commercial website, backend referral services, and key components of the mobile application. Contributed to major platform upgrades, migrating the CMS to Sanity and the frontend stack from Gatsby to Astro with Tailwind CSS. Led the technical implementation of key growth experiments, utilizing Terraform and AWS Lambdas to route localized traffic for A/B testing, culminating in a navigation redesign that increased user sign-ups.",
+      "Drove the modern overhaul of core platform tech stacks and content management systems to optimize ownership and workflow efficiency. Designed and executed robust product experiments and user flow redesigns that amplified key growth metrics. Led developer-experience initiatives to transition the engineering ecosystem toward AI-native monorepo practices.",
     technologies: [
       "React",
       "Typescript",
