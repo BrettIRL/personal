@@ -1,4 +1,4 @@
-interface Job {
+export interface Job {
   from: string;
   to: string;
   company: string;

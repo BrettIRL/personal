@@ -12,6 +12,9 @@
     "preview": {
       "dependsOn": ["build"],
       "cache": false
+    },
+    "typecheck": {
+      "dependsOn": ["^typecheck"]
     }
   }
 }
