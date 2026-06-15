@@ -34,9 +34,9 @@ export const projects: Project[] = [
     imageKey: "riftCompanion",
     name: "Rift Companion",
     description:
-      "Companion app for League of Legends: view ranks, match history, statistics, and live game information for multiple profiles.",
+      "Companion app for League of Legends: view ranks, match history, statistics, and live game information for multiple profiles. Achieved over 10,000 users within two days of release.",
     note: "Discontinued due to Riot API Changes.",
-    technologies: ["Swift", "Cocoapods"],
+    technologies: ["Swift", "Node.js", "Express", "Redis"],
   },
   {
     imageKey: "hoops",

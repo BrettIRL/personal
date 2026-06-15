@@ -1,0 +1,23 @@
+{
+  "name": "@personal/mcp",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "cf-typegen": "wrangler types",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@personal/data": "workspace:*",
+    "agents": "^0.16.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260613.1",
+    "@personal/tsconfig": "workspace:*",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.100.0"
+  }
+}
