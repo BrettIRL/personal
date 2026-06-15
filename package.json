@@ -1,27 +1,21 @@
 {
-  "name": "personalv2",
-  "version": "0.0.1",
+  "name": "personal",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "preview": "turbo run preview",
     "format": "prettier --check .",
     "format:fix": "prettier --write ."
   },
-  "dependencies": {
-    "astro": "^6.4.4"
-  },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.0",
+    "@personal/prettier-config": "workspace:*",
     "prettier": "^3.8.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.8.0",
-    "sharp": "^0.34.5",
-    "tailwindcss": "^4.3.0"
+    "turbo": "^2.5.0"
   },
   "engines": {
     "node": ">=22.12.0"
-  }
+  },
+  "packageManager": "pnpm@11.6.0"
 }
