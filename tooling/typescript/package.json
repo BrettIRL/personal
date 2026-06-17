@@ -1,4 +1,7 @@
 {
   "name": "@personal/tsconfig",
-  "private": true
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
