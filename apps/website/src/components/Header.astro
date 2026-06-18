@@ -1,7 +1,7 @@
 ---
 import Callout from "./Callout.astro";
 import ThemeToggle from "./ThemeToggle.astro";
-import { navMenu } from "../lib/data/nav";
+import { navMenu } from "@personal/data";
 import { links } from "@personal/data";
 ---
 
@@ -28,11 +28,11 @@ import { links } from "@personal/data";
           navMenu.map((menuItem) => (
             <li>
               <a
-                href={menuItem.link}
+                href={`#${menuItem.name.toLowerCase()}`}
                 class="nav-item group flex items-center py-3"
               >
                 <span class="text-xs font-bold tracking-widest text-slate-500 uppercase group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                  {menuItem.title}
+                  {menuItem.name}
                 </span>
               </a>
             </li>
