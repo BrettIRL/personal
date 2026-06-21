@@ -1,6 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { experience, projects } from "@personal/data";
+import { about, experience, projects } from "@personal/data";
 import { pitch } from "./pitch";
 
 function getSkills() {
@@ -52,6 +52,24 @@ export function registerTools(server: McpServer) {
               null,
               2,
             ),
+          },
+        ],
+      };
+    },
+  );
+
+  server.registerTool(
+    "get-about",
+    {
+      description:
+        "Get Brett's personal background and career narrative, presented as paragraphs with embedded links to notable companies and projects he's worked with",
+    },
+    async () => {
+      return {
+        content: [
+          {
+            type: "text",
+            text: JSON.stringify(about, null, 2),
           },
         ],
       };

@@ -3,5 +3,7 @@ export { experience } from "./experience";
 export type { Project, ProjectImageKey } from "./projects";
 export { projects } from "./projects";
 export { links } from "./links";
+export type { Link, Paragraph, Segment } from "./about";
+export { about } from "./about";
 export type { NavItem } from "./nav";
 export { navMenu } from "./nav";
