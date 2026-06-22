@@ -1,7 +1,4 @@
-export interface Link {
-  text: string;
-  url: string;
-}
+import type { Link } from "./types";
 
 export type Segment = string | Link;
 
@@ -13,15 +10,15 @@ export const about: Paragraph[] = [
   ],
   [
     "Throughout my career, I've had the opportunity to work with a diverse range of clients and companies, from individuals and small businesses to startups, larger B2B SaaS companies, and a company I co-founded. I've collaborated on projects spanning various industries, from ",
-    { text: "film production", url: "https://hoopsprod.co.za" },
+    { label: "film production", url: "https://hoopsprod.co.za" },
     " and ",
-    { text: "recruitment", url: "https://offerzen.co.za" },
+    { label: "recruitment", url: "https://offerzen.co.za" },
     " to ",
-    { text: "e-commerce", url: "https://chaebanicecream.com" },
+    { label: "e-commerce", url: "https://chaebanicecream.com" },
     ", ",
-    { text: "sport", url: "https://playup.coach" },
+    { label: "sport", url: "https://playup.coach" },
     ", and ",
-    { text: "fintech", url: "https://pleo.io" },
+    { label: "fintech", url: "https://pleo.io" },
     ".",
   ],
   [
