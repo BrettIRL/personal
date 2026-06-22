@@ -1,3 +1,4 @@
+export { basic } from "./basic";
 export type { Job } from "./experience";
 export { experience } from "./experience";
 export type { Project, ProjectImageKey } from "./projects";
