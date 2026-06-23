@@ -10,6 +10,7 @@
     "build": "turbo run build",
     "build:mcp": "pnpm --filter mcp build",
     "build:website": "pnpm --filter website build",
+    "serve:tui": "pnpm --filter tui serve",
     "preview": "turbo run preview",
     "typecheck": "turbo run typecheck",
     "format": "prettier --check .",

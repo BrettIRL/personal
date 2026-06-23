@@ -6,7 +6,9 @@ packages:
 allowBuilds:
   "@mongodb-js/zstd": false
   core-js-pure: false
+  cpu-features: true
   esbuild: true
   node-liblzma: false
   sharp: true
+  ssh2: true
   workerd: true

@@ -5,11 +5,13 @@
   "private": true,
   "scripts": {
     "dev": "bun src/index.ts",
+    "serve": "bun src/server.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@personal/data": "workspace:*",
-    "@opentui/core": "^0.4.1"
+    "@opentui/core": "^0.4.1",
+    "@opentui/ssh": "^0.4.1",
+    "@personal/data": "workspace:*"
   },
   "devDependencies": {
     "@personal/tsconfig": "workspace:*",
