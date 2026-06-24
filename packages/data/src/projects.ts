@@ -1,8 +1,8 @@
 export type ProjectImageKey =
+  | "personal"
   | "candidateTracker"
   | "greaseTraps"
-  | "riftCompanion"
-  | "hoops";
+  | "riftCompanion";
 
 export interface Project {
   imageKey: ProjectImageKey;
@@ -14,6 +14,14 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    imageKey: "personal",
+    name: "Personal Website, MCP Server, and TUI",
+    link: "https://cocking.dev",
+    description:
+      "My personal website alonside some fun I had creating an MCP server for my professional portfolio (mcp.cocking.dev) and a TUI that can be accessed vs SSH `ssh cli.cocking.dev`.",
+    technologies: ["Astro", "TypeScript", "Tailwind", "MCP", "OpenTUI"],
+  },
   {
     imageKey: "candidateTracker",
     name: "Edge Candidate Tracker",
@@ -37,13 +45,5 @@ export const projects: Project[] = [
       "Companion app for League of Legends: view ranks, match history, statistics, and live game information for multiple profiles. Achieved over 10,000 users within two days of release.",
     note: "Discontinued due to Riot API Changes.",
     technologies: ["Swift", "Node.js", "Express", "Redis"],
-  },
-  {
-    imageKey: "hoops",
-    name: "Hoops Productions",
-    link: "https://hoopsprod.co.za",
-    description:
-      "Portfolio website developed to showcase the incredible work of a South African film and photo production company.",
-    technologies: ["Wordpress", "PHP", "Javascript", "MySQL"],
   },
 ];
