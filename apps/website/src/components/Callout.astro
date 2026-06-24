@@ -1,5 +1,9 @@
 ---
+import cliIcon from "../assets/images/cli.svg?raw";
+import mcpIcon from "../assets/images/mcp.svg?raw";
+
 const mcpUrl = import.meta.env.PUBLIC_MCP_URL;
+const tuiUrl = import.meta.env.PUBLIC_TUI_URL;
 ---
 
 <div
@@ -9,27 +13,61 @@ const mcpUrl = import.meta.env.PUBLIC_MCP_URL;
     Websites are so 2025, aren't they?
   </p>
   <p>
-    If you'd prefer to let your AI agent get to know me, you can give it access
-    to the <a
+    <span
+      class="mr-1 inline-block h-3 w-3 align-middle text-sky-500 dark:text-sky-400 [&>svg]:h-full [&>svg]:w-full"
+      set:html={mcpIcon}
+    />
+    Let your agent get to know me with the
+    <a
       href={`https://${mcpUrl}`}
       class="font-medium text-sky-500 hover:text-sky-400 dark:text-sky-400 dark:hover:text-sky-300"
       target="_blank">MCP</a
     > server.
   </p>
+  <p class="mt-2">
+    <span
+      class="mr-1 inline-block h-3 w-3 align-middle text-sky-500 dark:text-sky-400 [&>svg]:h-full [&>svg]:w-full"
+      set:html={cliIcon}
+    />
+    Or skip the browser entirely with the <span
+      class="font-medium text-sky-500 dark:text-sky-400">TUI</span
+    >:
+  </p>
+  <code
+    class="mt-1.5 ml-4 inline-block rounded border border-slate-200 bg-white px-2 py-1 font-mono text-[11px] text-slate-700 select-all dark:border-slate-700/50 dark:bg-slate-900/50 dark:text-slate-300"
+    >ssh {tuiUrl}</code
+  >
 </div>
 <details class="z-10 mt-8 lg:hidden">
-  <summary class="cursor-pointer text-sm text-sky-500 dark:text-sky-400"
-    >Not tired of AI?</summary
-  >
+  <summary class="cursor-pointer text-sm text-sky-500 dark:text-sky-400">
+    Websites are so 2025, aren't they?
+  </summary>
   <div
     class="mt-2 rounded-md border border-slate-200 bg-slate-50 p-3 text-xs leading-relaxed text-slate-600 dark:border-slate-700/50 dark:bg-slate-800/50 dark:text-slate-400"
   >
     <p>
+      <span
+        class="mr-1 inline-block h-3 w-3 align-middle text-sky-500 dark:text-sky-400 [&>svg]:h-full [&>svg]:w-full"
+        set:html={mcpIcon}
+      />
       You can give your AI agent access to the <a
         href={`https://${mcpUrl}`}
         class="font-medium text-sky-500 hover:text-sky-400 dark:text-sky-400 dark:hover:text-sky-300"
         target="_blank">MCP</a
       > server.
     </p>
+    <p class="mt-2">
+      <span
+        class="mr-1 inline-block h-3 w-3 align-middle text-sky-500 dark:text-sky-400 [&>svg]:h-full [&>svg]:w-full"
+        set:html={cliIcon}
+      />
+      Or skip the browser entirely with the <span
+        class="font-medium text-sky-500 dark:text-sky-400">TUI</span
+      >:
+    </p>
+    <code
+      class="mt-1.5 inline-block rounded border border-slate-200 bg-white px-2 py-1 font-mono text-[11px] text-slate-700 select-all dark:border-slate-700/50 dark:bg-slate-900/50 dark:text-slate-300"
+      >ssh {tuiUrl}</code
+    >
   </div>
 </details>
